@@ -11,63 +11,65 @@ import URLUtils from 'util/URLUtils';
 
 import Routes from 'routing/Routes';
 
-import StartPage from 'pages/StartPage';
-import DelegatedSearchPage from 'pages/DelegatedSearchPage';
-import ShowMessagePage from 'pages/ShowMessagePage';
-import StreamsPage from 'pages/StreamsPage';
-import AlertsPage from 'pages/AlertsPage';
-import ShowAlertPage from 'pages/ShowAlertPage';
-import AlertConditionsPage from 'pages/AlertConditionsPage';
-import AlertNotificationsPage from 'pages/AlertNotificationsPage';
-import NewAlertConditionPage from 'pages/NewAlertConditionPage';
-import NewAlertNotificationPage from 'pages/NewAlertNotificationPage';
-import EditAlertConditionPage from 'pages/EditAlertConditionPage';
-import StreamEditPage from 'pages/StreamEditPage';
-import StreamOutputsPage from 'pages/StreamOutputsPage';
-import StreamSearchPage from 'pages/StreamSearchPage';
-import DashboardsPage from 'pages/DashboardsPage';
-import ShowDashboardPage from 'pages/ShowDashboardPage';
-import SourcesPage from 'pages/SourcesPage';
-import InputsPage from 'pages/InputsPage';
-import NodeInputsPage from 'pages/NodeInputsPage';
-import ExtractorsPage from 'pages/ExtractorsPage';
-import CreateExtractorsPage from 'pages/CreateExtractorsPage';
-import EditExtractorsPage from 'pages/EditExtractorsPage';
-import ImportExtractorsPage from 'pages/ImportExtractorsPage';
-import ExportExtractorsPage from 'pages/ExportExtractorsPage';
-import SystemOutputsPage from 'pages/SystemOutputsPage';
-import RolesPage from 'pages/RolesPage';
-import ContentPacksPage from 'pages/ContentPacksPage';
-import ExportContentPackPage from 'pages/ExportContentPackPage';
-import UsersPage from 'pages/UsersPage';
-import CreateUsersPage from 'pages/CreateUsersPage';
-import EditUsersPage from 'pages/EditUsersPage';
-import EditTokensPage from 'pages/EditTokensPage';
-import GrokPatternsPage from 'pages/GrokPatternsPage';
-import SystemOverviewPage from 'pages/SystemOverviewPage';
-import IndexerFailuresPage from 'pages/IndexerFailuresPage';
-import IndicesPage from 'pages/IndicesPage';
-import LoggersPage from 'pages/LoggersPage';
-import GettingStartedPage from 'pages/GettingStartedPage';
-import ShowMetricsPage from 'pages/ShowMetricsPage';
-import ShowNodePage from 'pages/ShowNodePage';
-import NodesPage from 'pages/NodesPage';
-import ThreadDumpPage from 'pages/ThreadDumpPage';
-import ConfigurationsPage from 'pages/ConfigurationsPage';
-import NotFoundPage from 'pages/NotFoundPage';
-import AuthenticationPage from 'pages/AuthenticationPage';
-import IndexSetPage from 'pages/IndexSetPage';
-import IndexSetConfigurationPage from 'pages/IndexSetConfigurationPage';
-import IndexSetCreationPage from 'pages/IndexSetCreationPage';
-import LUTTablesPage from 'pages/LUTTablesPage';
-import LUTCachesPage from 'pages/LUTCachesPage';
-import LUTDataAdaptersPage from 'pages/LUTDataAdaptersPage';
-import PipelinesOverviewPage from 'pages/PipelinesOverviewPage';
-import PipelineDetailsPage from 'pages/PipelineDetailsPage';
-import SimulatorPage from 'pages/SimulatorPage';
-import RulesPage from 'pages/RulesPage';
-import RuleDetailsPage from 'pages/RuleDetailsPage';
-import EnterprisePage from 'pages/EnterprisePage';
+import {
+  StartPage,
+  DelegatedSearchPage,
+  ShowMessagePage,
+  StreamsPage,
+  AlertsPage,
+  ShowAlertPage,
+  AlertConditionsPage,
+  AlertNotificationsPage,
+  NewAlertConditionPage,
+  NewAlertNotificationPage,
+  EditAlertConditionPage,
+  StreamEditPage,
+  StreamOutputsPage,
+  StreamSearchPage,
+  DashboardsPage,
+  ShowDashboardPage,
+  SourcesPage,
+  InputsPage,
+  NodeInputsPage,
+  ExtractorsPage,
+  CreateExtractorsPage,
+  EditExtractorsPage,
+  ImportExtractorsPage,
+  ExportExtractorsPage,
+  SystemOutputsPage,
+  RolesPage,
+  ContentPacksPage,
+  ExportContentPackPage,
+  UsersPage,
+  CreateUsersPage,
+  EditUsersPage,
+  EditTokensPage,
+  GrokPatternsPage,
+  SystemOverviewPage,
+  IndexerFailuresPage,
+  IndicesPage,
+  LoggersPage,
+  GettingStartedPage,
+  ShowMetricsPage,
+  ShowNodePage,
+  NodesPage,
+  ThreadDumpPage,
+  ConfigurationsPage,
+  NotFoundPage,
+  AuthenticationPage,
+  IndexSetPage,
+  IndexSetConfigurationPage,
+  IndexSetCreationPage,
+  LUTTablesPage,
+  LUTCachesPage,
+  LUTDataAdaptersPage,
+  PipelinesOverviewPage,
+  PipelineDetailsPage,
+  SimulatorPage,
+  RulesPage,
+  RuleDetailsPage,
+  EnterprisePage,
+} from 'pages';
 
 class AppRouter extends React.Component {
   render() {
