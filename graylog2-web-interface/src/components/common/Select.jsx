@@ -4,7 +4,11 @@ import createReactClass from 'create-react-class';
 import ReactSelect from 'react-select';
 import lodash from 'lodash';
 
+import 'react-select/dist/react-select.css';
+
 import AppConfig from 'util/AppConfig';
+
+import SelectStyle from './Select.css';
 
 // Pass all props react-select accepts, except those we want to override
 const filteredProps = ['onChange', 'value', 'labelKey'];
@@ -82,20 +86,10 @@ const Select = createReactClass({
     };
   },
 
-  componentDidMount() {
-    this.reactSelectStyles.use();
-    this.reactSelectSmStyles.use();
-  },
-
   componentWillReceiveProps(nextProps) {
     if (this.props.value !== nextProps.value) {
       this.setState({ value: nextProps.value });
     }
-  },
-
-  componentWillUnmount() {
-    this.reactSelectStyles.unuse();
-    this.reactSelectSmStyles.unuse();
   },
 
   getValue() {
@@ -135,8 +129,6 @@ const Select = createReactClass({
   },
 
   _select: undefined,
-  reactSelectStyles: require('!style/useable!css!react-select/dist/react-select.css'),
-  reactSelectSmStyles: require('!style/useable!css!./Select.css'),
 
   // Using ReactSelect.Creatable now needs to get values as objects or they are not display
   // This method takes care of formatting a string value into options react-select supports.
@@ -165,7 +157,7 @@ const Select = createReactClass({
     }
 
     return (
-      <div className={`${size === 'small' ? 'select-sm' : ''} ${this.reactSelectSmStyles.locals.increaseZIndex}`}>
+      <div className={`${size === 'small' ? 'select-sm' : ''} ${SelectStyle.increaseZIndex}`}>
         <SelectComponent ref={(c) => { this._select = c; }}
                          onChange={onReactSelectChange || this._onChange}
                          {...reactSelectProps}
