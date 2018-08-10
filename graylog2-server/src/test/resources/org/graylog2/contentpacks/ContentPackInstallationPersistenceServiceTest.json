@@ -19,15 +19,24 @@
       "entities": [
         {
           "id": "5b4c920b4b900a0024af2b5d",
-          "type": "collector"
+          "type": {
+            "name": "collector",
+            "version": "1"
+          }
         },
         {
           "id": "5b4c920b4b900a0024af2b5c",
-          "type": "collector"
+          "type": {
+            "name": "collector",
+            "version": "1"
+          }
         },
         {
           "id": "5b4c920b4b900a0024af2b5b",
-          "type": "collector"
+          "type": {
+            "name": "collector",
+            "version": "1"
+          }
         }
       ],
       "comment": "comment1",
@@ -49,23 +58,38 @@
       "entities": [
         {
           "id": "5b4c935b4b900a0062b7dc16",
-          "type": "dashboard"
+          "type": {
+            "name": "dashboard",
+            "version": "1"
+          }
         },
         {
           "id": "5b4c935b4b900a0062b7dc19",
-          "type": "grok_pattern"
+          "type": {
+            "name": "grok_pattern",
+            "version": "1"
+          }
         },
         {
           "id": "5b4c935b4b900a0062b7dc1b",
-          "type": "input"
+          "type": {
+            "name": "input",
+            "version": "1"
+          }
         },
         {
           "id": "5b4c935b4b900a0062b7dc1f",
-          "type": "output"
+          "type": {
+            "name": "output",
+            "version": "1"
+          }
         },
         {
           "id": "5b4c935b4b900a0062b7dc20",
-          "type": "stream"
+          "type": {
+            "name": "stream",
+            "version": "1"
+          }
         }
       ],
       "comment": "comment2",
@@ -87,23 +111,38 @@
       "entities": [
         {
           "id": "5b4c935b4b900a0062b7dc0a",
-          "type": "pipeline_rule"
+          "type": {
+            "name": "pipeline_rule",
+            "version": "1"
+          }
         },
         {
           "id": "5b4c935b4b900a0062b7dc0b",
-          "type": "pipeline"
+          "type": {
+            "name": "pipeline",
+            "version": "1"
+          }
         },
         {
           "id": "cp_lookup",
-          "type": "lookup_adapter"
+          "type": {
+            "name": "lookup_adapter",
+            "version": "1"
+          }
         },
         {
           "id": "cp_lookup",
-          "type": "lookup_cache"
+          "type": {
+            "name": "lookup_cache",
+            "version": "1"
+          }
         },
         {
           "id": "5b4c935b4b900a0062b7dc14",
-          "type": "lookup_table"
+          "type": {
+            "name": "lookup_table",
+            "version": "1"
+          }
         }
       ],
       "comment": "comment3",
